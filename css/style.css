@@ -16,8 +16,31 @@ h1
 h2
 {
     font-family: 'Playfair Display', serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 30px;
+    text-align: center;
+}
+
+h3
+{
+    padding: 5px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+img
+{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+iframe
+{
+    display: block;
+    margin: auto;
+    width: 80%;
 }
 
 a
@@ -28,7 +51,8 @@ a
 
 a:hover
 {
-     color: goldenrod;
+    color: goldenrod;
+    font-size:3vh;
 }
 
 #pageBanner
@@ -40,43 +64,66 @@ a:hover
 #pageHeader
 {
     padding: 10px;
-    background-color: black;
+    background-color: #0f1125;
     color: white;
     text-align: center;
 }
 
 nav
 {
-    padding: 10px;
-    background-color:  #182949;
+    background-color:#002531;
     float: left;
     width: 25%;
-    color: white;
-    line-height: 3;
-    text-indent: 15px;
-    font-size: 14px;
-}
-
-#navSub
-{
-    font-size: 17px;
+    height: 100vh;
+    overflow: auto;
+    color: #ffffff;
+    line-height: 2;
+    font-size: 15px;
+    padding: 3% 3% 7% 3%;
 }
 
 #sticky
 {
     position: sticky;
     top: 0;
+    z-index: 1;
+}
+
+#subHeader1, #subHeader2, #subHeader3, #subHeader4, #subHeader5, #subHeader6, #subHeader7, #subHeader8, #subHeader9, #subHeader10
+{
+    background-color: #ff2f90;
+    border-radius: 25px;
+    padding: 10px 50px 10px 50px;
+    margin: 50px;
 }
 
 main
 {
-    padding: 100px;
+    display:block;
+    padding: 50px;
     float: right;
     width: 75%;
     word-spacing: 2;
     line-height: 2;
-    background-color:#ffcabd;
+    background-color: #738fff;
     text-align: justify;
+    font-size: 15px;
+}
+
+#section
+{
+    background: #fdd318;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+p, article
+{
+    padding: 70px 50px 70px 50px;
+    margin: 50px;
+    background-color: #ebebeb;
+    border-radius: 20px;
+    box-shadow: 4px 0px 0px 1px #888888;
 }
 
 figcaption
@@ -86,45 +133,242 @@ figcaption
     text-align: center;
 }
 
+#contentHeader
+{
+    letter-spacing:1px; 
+    text-align:center; 
+    background-color: #ebebeb;
+    border-radius: 25px;
+    padding: 10px 10px;
+    box-shadow: 5px 5px 0px 2px #888888;
+}
+
+#graphA, #graphB
+{
+    display: block;
+    margin: auto;
+    background-color: #c4c4c4;
+    width: 70%;
+    text-align:center;
+    position: relative;
+    height: 350px;
+}
+
+#graph1, #graph2, #graph3, #graph4
+{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100px;
+	height: 100px;
+	text-align:center;
+	color: white;
+    background-color: black;
+    font-size: small;
+    margin: 0px 20px 0px 20px;
+    position: absolute;
+    bottom: 0px;
+}
+
+#graph4
+{
+    height: 200px;
+}
+
+#graph1, #graph3
+{
+    margin-left: -90px;
+}
+
+#graph1
+{
+    animation: bar1 5s ease 0s infinite normal;
+}
+
+@keyframes bar1
+{
+    from {height: 100px;}
+    to {height: 200px;}
+}
+
+#graph2
+{
+    animation: bar2 5s ease 0s infinite normal;
+}
+
+@keyframes bar2
+{
+    from {height: 100px;}
+    to {height: 75px;}
+}
+
+#graph3
+{
+    animation: bar3 5s ease 5s infinite normal;
+}
+
+@keyframes bar3
+{
+    from {height: 100px;}
+    to {height: 250px;}
+}
+
+#graph4
+{
+    animation: bar4 5s ease 5s infinite normal;
+}
+
+@keyframes bar4
+{
+    from {height: 200px;}
+    to {height: 250px;}
+}
+
 #navBottom
 {
-    padding: 30px;
-    float: right;
+    box-sizing:border-box;
+    padding: 20px;
     width: 75%;
+    float:right;
     font-size: 20px;
     font-family: 'Playfair Display', serif;
 }
 
 #top, #backPage, #nextPage
 {
-    background-color: #201849;
-    margin: 20 px;
+    display: block;
+    box-sizing:border-box;
+    background-color: #ce1169;
+    margin: 10px;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 30px;
+    text-align: center;
+    width: 30%;
+    float:left;
+    box-shadow: 5px 5px 0px 4px #6d0938;
+}
+
+#top:hover, #backPage:hover, #nextPage:hover
+{
+    box-shadow: none;
+}
+
+#footerInfo
+{
+    display: block;
+    clear: left;
+    clear: right;
+    position: sticky;
+    overflow: hidden;
+    background-color: #181a3d;
+    font-size: 13px;
+    line-height: 2;
+    z-index: 2;
+    color: #a3a3a3;
+    position: relative;
+    padding: 20px 20px 150px 20px;
+}
+
+#reference, #socMed
+{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    padding: 20px;
+    word-wrap: break-word;
+    position: relative;
+}
+
+#socMed
+{
+    width: 40%;
 }
 
 #reference
 {
-    padding: 30px;
-    clear: left;
-    clear: right;
-    position: sticky;
-    bottom: 2;
-    background-color: #313d55;
-    word-spacing: 2;
-    line-height: 3;
-    color: #000714;
+    position: absolute;
 }
 
-@media only screen and (max-width: 600px)
+#socMedA, #socMedB
 {
-    nav, main, #navBottom,iframe, img
+    display: inline-block;
+    box-sizing:border-box;
+    width: 25%;
+    font-weight: bold;
+    
+}
+
+#socMedB
+{
+    position: absolute;
+    width: 70%;
+}
+
+#socMedHeader
+{
+    box-sizing:border-box;
+    padding: 10% 0% 5% 20%;
+    font-size: 12px;
+}
+.sprite1, .sprite2, .sprite3
+{
+    margin: 25% 0% 0% 80%;
+    display: block;
+    z-index: 3px;
+}
+
+.sprite1 
+{
+    background: url('../images/socMed.png') no-repeat -226px -280px;
+    width: 61px;
+	height: 43px;
+}
+           
+.sprite1:hover
+{
+    background: url('../images/socMed.png') no-repeat -225px -355px;
+    width: 63px;
+	height: 44px;
+}
+
+.sprite2
+{
+    background: url('../images/socMed.png') no-repeat -303px -278px;
+    width: 53px;
+	height: 53px;
+}
+           
+.sprite2:hover
+{
+    background: url('../images/socMed.png') no-repeat -303px -351px;
+    width: 53px;
+	height: 53px;
+}
+
+.sprite3
+{
+	background: url('../images/socMed.png') no-repeat -159px -275px;;
+	width: 52px;
+	height: 52px;
+}
+           
+.sprite3:hover
+{
+    background: url('../images/socMed.png') no-repeat -159px -351px;
+	width: 52px;
+	height: 52px;
+}
+
+@media only screen and (max-width: 700px)
+{
+    nav, main, #navBottom,iframe, img, #footerInfo, #reference, #socMed
     {
         width: 100%;
         height: 100%;
     }
-    #sticky
+    #sticky, #reference, #socMed
     {
         position: static;
     }
+
+
 }
